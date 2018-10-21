@@ -1,0 +1,32 @@
+package try1;
+
+import java.io.*;
+
+public class T1 {
+	
+	public static void main(String[] args) {
+		
+		try {
+			byte[] bW = {0, 1, 2, 3, 4, 5};
+			OutputStream os = new FileOutputStream("C:/HD_D/eclipse_workspace/dataIO/test.txt");
+			for (int i = 0; i < bW.length; i++) {
+				os.write(bW[i]);
+			}
+			os.close();
+			
+			InputStream is = new FileInputStream("C:/HD_D/eclipse_workspace/dataIO/test.txt");
+			int size = is.available();
+			for (int i = 0; i < size; i++) {
+				System.out.println( (char)(is.read() + 'A') + " " );
+				//System.out.println(is.read() + " ");
+			}
+			is.close();
+			
+			
+		} catch (IOException e) {
+			System.out.print("Exception");
+		}
+		
+	}
+	
+}
