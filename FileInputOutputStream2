@@ -1,0 +1,37 @@
+package try1;
+
+import java.io.*;
+
+public class T2 {
+	public static void main(String[] args) throws IOException {
+		
+		File f = new File("C:/HD_D/eclipse_workspace/dataIO/test2.txt");
+		//文件不存在会自动创建
+		FileOutputStream fop = new FileOutputStream(f);
+		OutputStreamWriter writer = new OutputStreamWriter(fop, "UTF-8");
+		writer.append("中文输入");
+		writer.append("\r\n");
+		writer.append("English");
+		writer.append("\n");
+		writer.append("你好啊，大胖猪~");
+		writer.close();
+		fop.close();
+		
+		FileInputStream fip = new FileInputStream(f);
+		InputStreamReader reader = new InputStreamReader(fip, "UTF-8");
+		StringBuffer sb = new StringBuffer();
+		
+		while(reader.ready()) {
+			sb.append( (char) reader.read() );  //转换成char加到StringBuffer对象中
+		}
+		String ans = sb.toString();
+		System.out.println(ans);
+		System.out.println(ans.length());
+		
+		reader.close();
+		fip.close();
+		
+	}
+	
+
+}
