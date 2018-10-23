@@ -74,6 +74,31 @@ public class T3 {
 }
 */
 
+/*
+public class T4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		double sum = 0;
+		int m = 0;
+		
+		while (scan.hasNextDouble()) {
+			double x = scan.nextDouble();
+			m++;
+			sum = sum + x;
+		}
+		
+		System.out.println("样本数量为: " + m);
+		System.out.println("总和为: " + sum);
+		System.out.println("平均数为: " + sum/m);
+
+	}
+
+}
+*/
+
 
 
 
