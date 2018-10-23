@@ -37,3 +37,43 @@ public class T3 {
 
 }
 */
+
+
+/*
+public class T3 {
+
+	public static void main(String[] args) {
+		// 从键盘接收数据
+		Scanner scan = new Scanner(System.in);
+		
+		int i = 0;
+		float f = 0.0f;
+		System.out.print("请输入整数： ");
+		if (scan.hasNextInt()) {
+			i = scan.nextInt();
+			System.out.println("输入的整数是： " + i);
+		} else {
+			if (scan.hasNext()) {
+				String str1 = scan.next();  // 防止第一次输入的小数带到第二次里面
+				System.out.println("输入的不是整数");
+			}
+			
+		}
+		
+		System.out.print("请输入小数： ");
+		if(scan.hasNextFloat()) {
+			f = scan.nextFloat();
+			System.out.println("输入的小数是： " + f);
+		} else {
+			System.out.println("输入的不是小数");
+		}
+		scan.close();
+
+	}
+
+}
+*/
+
+
+
+
