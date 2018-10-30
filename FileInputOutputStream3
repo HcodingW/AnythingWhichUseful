@@ -136,3 +136,30 @@ public class T4 {
 }
 /*
 
+/*
+import java.util.*;
+import java.io.*;
+
+public class T4 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		int[] arr = new int[10];
+		int i = 0;
+		Scanner scan = new Scanner(new File("C:/HD_D/eclipse_workspace/dataIO/test3.txt"));
+		
+		while (scan.hasNextInt()) {      //以空格或者回车作为分隔符都可以
+			arr[i] = scan.nextInt();
+			i++;
+		}
+		scan.close();
+		
+		System.out.printf("读取了%d个数\n", i);
+		for (int j = 0; j < i; j++) {
+			System.out.println(arr[j]);
+		}
+	}
+
+}
+*/
+
+
