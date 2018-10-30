@@ -111,3 +111,28 @@ if(cons==null){
 */
 
 
+
+/*
+import java.util.*;
+public class T4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("输入数据：");
+		
+		while (scan.hasNextLine()) {
+			String inp = scan.nextLine();
+			if (inp.equals("q")) break;
+			String[] words = inp.split(",");     // "\\s" 匹配任何空白字符，包括空格、制表符、换页符等
+			for (String wd:words) {
+				System.out.println(wd);
+			}
+		}
+		scan.close();
+
+	}
+
+}
+/*
+
