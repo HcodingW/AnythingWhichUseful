@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class T1 {
+public class ListListInteger {
 	
 	public static void main(String[] args) throws IOException {
 		
