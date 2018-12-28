@@ -33,6 +33,7 @@ public class ListListInteger {
 			System.out.println();
 		}
 		System.out.println("Fatherlist size is: " + list0.size());
+		System.out.println(list0);
 	}
 	
 }
